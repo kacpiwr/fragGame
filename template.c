@@ -129,7 +129,7 @@ void CleanWin(WIN* W, int bo)							// bo(rder): 0 | 1
 										// window initialization: position, colors, border, etc
 WIN* Init(WINDOW* parent, int rows, int cols, int y, int x, int color, int bo, int delay)
 {
-//	WIN* W = new WIN;							// C++ version; compile with g++
+//	WIN* W = new WIN;				 			// C++ version; compile with g++
 	WIN* W = (WIN*)malloc(sizeof(WIN));					// C version; compile with gcc
 	W->x = x; W->y = y; W->rows = rows; W->cols = cols; W->color = color;
 	W->window = subwin(parent, rows, cols, y, x);
