@@ -76,6 +76,7 @@ typedef struct{
 
 // FUNCTIONS ==================
 //Window functions
+//functions used from shared tamplate
 void Welcome(WINDOW* win)							// Welcome screen (optional): press any key to continue
 {
 	mvwaddstr(win, 1, 1, "Do you want to play a game?");
